@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -141,3 +142,9 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+=======
+wedding/node_modules
+wed-backend/node_modules
+wedding/.env
+wed-backend/.env
+>>>>>>> d98084d (Add frontend and backend full project)

@@ -1,0 +1,163 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(95, 55, 55);
+  color: white;
+  padding: 12px 20px; 
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px;  
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: rgb(240, 210, 210);
+  transition: 0.4s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 27px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a,
+.dropdown > span {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-links a::after,
+.dropdown > span::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #e91e63;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after,
+.dropdown:hover > span::after {
+  width: 100%;
+}
+
+.nav-links a:hover,
+.dropdown > span:hover {
+  color: rgb(174, 108, 108);
+}
+
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  list-style: none;
+  padding: 10px 0;
+  display: none;
+  min-width: 180px;
+  border-radius: 10px;
+  z-index: 999;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+.dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+  color: rgb(82, 24, 63);
+  font-size: 15px;
+}
+
+
+.dropdown-menu li:hover {
+  background: #ffe0e6;
+}
+
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* 🍔 HAMBURGER (hidden desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgb(95, 55, 55);
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    display: none; 
+  }
+
+  .nav-links.active {
+    display: flex; 
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .dropdown-menu {
+    position: static;
+    display: none;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu li a {
+    color: white;
+  }
+}

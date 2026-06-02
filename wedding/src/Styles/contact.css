@@ -1,0 +1,127 @@
+/* TOP SECTION WITH BG */
+.contact-top {
+  min-height: 80vh;
+  width: 100%;
+  background: url("../assets/contact-bg.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+/* OVERLAY */
+.contact-overlay {
+  min-height: 80vh;
+  width: 100%;
+  background: rgba(33, 32, 32, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 80px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* TEXT SECTION */
+.contact-text {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+  color: #000;
+}
+
+.contact-text h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color:white;
+}
+
+.contact-text p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color:azure;
+}
+
+/* FORM BOX */
+.contact-form-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 420px;
+  max-width: 100%;
+  min-height: 450px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* BOTTOM SECTION */
+.contact-bottom {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: rgb(186, 148, 151);
+  color:white;
+}
+
+.contact-bottom h3 {
+  margin-bottom: 20px;
+
+}
+
+.contact-bottom p {
+  margin: 8px 0;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background:rgba(189, 87, 104, 0.916);
+  color:white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* MAP */
+.map {
+  width: 100%;
+  height: 250px;
+  border: none;
+  margin-top: 10px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLET */
+@media (max-width: 992px) {
+  .contact-overlay {
+    padding: 40px 30px;
+    gap: 30px;
+  }
+
+  .contact-text h1 {
+    font-size: 36px;
+  }
+
+  .contact-text p {
+    font-size: 16px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .contact-overlay {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .contact-text h1 {
+    font-size: 28px;
+  }
+
+  .contact-text p {
+    font-size: 14px;
+  }
+
+  .contact-form-box {
+    width: 100%;
+  }
+}

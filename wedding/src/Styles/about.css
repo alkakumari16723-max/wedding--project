@@ -1,0 +1,263 @@
+
+.about-page {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.about-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  object-position:50% 70%; 
+  z-index: -1;
+}
+
+
+.about-overlay {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.about-overlay h1 {
+  font-size: 42px;
+}
+
+.about-overlay p {
+  font-size: 16px;
+}
+
+
+.about-intro {
+  display: flex;
+  padding: 60px 20px;
+  gap: 40px;
+  align-items: center;
+  background-color: #fff0f5;
+  flex-wrap: wrap; 
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #d6336c;
+}
+
+.about-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-img img {
+  width: 100%;
+  max-width: 350px; /* ✅ fixed */
+  border-radius: 15px;
+}
+
+/* SECTION */
+.about-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.about-section h2 {
+  font-size: 28px;
+}
+
+
+.about-grid-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.about-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* STORY */
+.about-story {
+  padding: 60px 20px;
+  background: #fff0f5;
+  text-align: center;
+}
+
+.story-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.story-content h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color:rgb(209, 85, 85);
+}
+
+.story-content p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* FOUNDERS */
+.about-founders {
+  padding: 60px 20px;
+  text-align: center;
+  background-color:#fff0f5;
+}
+
+.about-founders h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color:rgb(209, 85, 85)
+}
+
+.founders-grid {
+  display: flex;
+  gap: 70px; 
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.founder-card {
+  width: 100%;
+  max-width: 280px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.founder-card:hover {
+  transform: translateY(-6px);
+}
+
+.founder-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* STATS */
+.about-stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* ✅ important */
+  gap: 20px;
+  padding: 50px 20px;
+  background: rgb(243, 175, 175);
+  text-align: center;
+}
+
+.stat {
+  flex: 1;
+  min-width: 150px;
+}
+
+.stat h3 {
+  font-size: 26px;
+  color: white;
+}
+
+.stat p {
+  font-size: 14px;
+  color: white;
+}
+
+/* CTA */
+.about-cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: #111;
+  color: white;
+}
+
+.about-cta button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  background: #ff7a00;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .about-hero {
+    height: 50vh;
+  }
+
+  .about-overlay h1 {
+    font-size: 28px;
+  }
+
+  .about-overlay p {
+    font-size: 14px;
+  }
+
+  .about-intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section h2,
+  .about-founders h2 {
+    font-size: 24px;
+  }
+
+  .story-content h2 {
+    font-size: 24px;
+  }
+
+  .story-content p {
+    font-size: 14px;
+  }
+}

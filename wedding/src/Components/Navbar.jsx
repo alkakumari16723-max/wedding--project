@@ -87,11 +87,7 @@ function Navbar() {
             Login
           </Link>
         </li>
-        <li>
-          <Link to="/register" onClick={() => setMenuOpen(false)}>
-            Register
-          </Link>
-        </li>
+       
         
 
       </ul>

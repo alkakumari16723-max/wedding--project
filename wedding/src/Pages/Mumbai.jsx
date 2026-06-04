@@ -4,13 +4,11 @@ import { useNavigate } from "react-router-dom";
 
 import mumbaiHero from "../assets/mumbaiHero.jpg";
 
-// ================= VENUES =================
-
 import mv1 from "../assets/mv1.jpg";
 import mv2 from "../assets/mv2.jpeg";
 import mv3 from "../assets/mv3.webp";
 
-// ================= GALLERY =================
+
 
 import mg1 from "../assets/mg1.jpeg";
 import mg2 from "../assets/mg2.webp";
@@ -21,7 +19,6 @@ import mg6 from "../assets/mg6.jpeg";
 import mg7 from "../assets/mg7.jpg";
 import mg8 from "../assets/mg8.jpg";
 
-// ================= PACKAGES =================
 
 import p1 from "../assets/p1.webp";
 import p2 from "../assets/p2.jpeg";
@@ -35,7 +32,7 @@ function Mumbai() {
 
     <div className="goa-page">
 
-      {/* ================= HERO ================= */}
+  
 
       <div
         className="hero"
@@ -74,7 +71,6 @@ function Mumbai() {
 
       </div>
 
-      {/* ================= VENUES ================= */}
 
       <section className="venues">
 
@@ -205,7 +201,6 @@ function Mumbai() {
 
       </section>
 
-      {/* ================= PACKAGES ================= */}
 
       <section className="packages">
 
@@ -215,7 +210,6 @@ function Mumbai() {
 
         <div className="package-cards">
 
-          {/* ================= SILVER ================= */}
 
           <div className="package">
 
@@ -271,8 +265,6 @@ function Mumbai() {
             </div>
 
           </div>
-
-          {/* ================= GOLD ================= */}
 
           <div className="package popular">
 
@@ -333,7 +325,6 @@ function Mumbai() {
 
           </div>
 
-          {/* ================= LUXURY ================= */}
 
           <div className="package">
 
@@ -394,7 +385,6 @@ function Mumbai() {
 
       </section>
 
-      {/* ================= GALLERY ================= */}
 
       <section className="gallery">
 
@@ -416,8 +406,6 @@ function Mumbai() {
         </div>
 
       </section>
-
-      {/* ================= WHY ================= */}
 
       <section className="why">
 

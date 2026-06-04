@@ -16,7 +16,7 @@ function EnquiryForm() {
     phone: "",
     email: "",
 
-    // AUTO FILL
+    
     location:
       locationData.state?.location || "",
 

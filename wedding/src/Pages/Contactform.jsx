@@ -45,7 +45,7 @@ function ContactForm() {
     return newErrors;
   };
 
-  // 🔹 handle change
+  
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -58,7 +58,7 @@ function ContactForm() {
     });
   };
 
-  // 🔹 submit (FIXED)
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -71,7 +71,7 @@ function ContactForm() {
       return;
     }
 
-    setLoading(true); // start loading
+    setLoading(true); 
 
     try {
       const res = await fetch("http://localhost:5000/api/contact", {

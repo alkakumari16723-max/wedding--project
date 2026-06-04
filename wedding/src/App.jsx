@@ -11,7 +11,7 @@ import Contact from "./Pages/Contact";
 import About from "./Pages/About";
 import Blog from "./Pages/Blog";
 import Services from "./Pages/Services";
-import PreWedding from "./Pages/Prewedding";
+import PreWedding from "./Pages/PreWedding";
 import Wedding from "./Pages/Wedding";
 import Reception from "./Pages/Reception";
 import Mumbai from "./Pages/Mumbai";

@@ -101,6 +101,7 @@ section, .services, .recent-events, .reviews, .wedding-slogan {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
    font-family: 'Nunito', sans-serif;
+   
   
 }
 
@@ -110,6 +111,7 @@ section, .services, .recent-events, .reviews, .wedding-slogan {
   margin: 10px auto;
   color:rgb(186, 111, 111);
   margin-top: 20px;
+  
 }
 
 
@@ -296,3 +298,4 @@ section, .services, .recent-events, .reviews, .wedding-slogan {
     font-size: 24px;
   }
 }
+

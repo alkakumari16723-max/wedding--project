@@ -4,13 +4,12 @@ import { useNavigate } from "react-router-dom";
 
 import delhiHero from "../assets/delhiHero.jpg";
 
-// ================= VENUES =================
+
 
 import d1 from "../assets/d1.jpg";
 import d2 from "../assets/d2.avif";
 import d3 from "../assets/d3.jpg";
 
-// ================= GALLERY =================
 
 import dg1 from "../assets/dg1.jpg";
 import dg2 from "../assets/dg2.avif";
@@ -21,7 +20,7 @@ import dg6 from "../assets/dg6.jpg";
 import dg7 from "../assets/dg7.jpg";
 import dg8 from "../assets/dg8.jpg";
 
-// ================= PACKAGES =================
+
 
 import p1 from "../assets/p1.webp";
 import p2 from "../assets/p2.jpeg";
@@ -35,7 +34,7 @@ function Delhi() {
 
     <div className="goa-page">
 
-      {/* ================= HERO ================= */}
+    
 
       <div
         className="hero"
@@ -74,7 +73,6 @@ function Delhi() {
 
       </div>
 
-      {/* ================= VENUES ================= */}
 
       <section className="venues">
 
@@ -205,7 +203,6 @@ function Delhi() {
 
       </section>
 
-      {/* ================= PACKAGES ================= */}
 
       <section className="packages">
 
@@ -215,7 +212,6 @@ function Delhi() {
 
         <div className="package-cards">
 
-          {/* ================= SILVER ================= */}
 
           <div className="package">
 
@@ -272,7 +268,6 @@ function Delhi() {
 
           </div>
 
-          {/* ================= GOLD ================= */}
 
           <div className="package popular">
 
@@ -333,7 +328,6 @@ function Delhi() {
 
           </div>
 
-          {/* ================= LUXURY ================= */}
 
           <div className="package">
 
@@ -394,7 +388,7 @@ function Delhi() {
 
       </section>
 
-      {/* ================= GALLERY ================= */}
+  
 
       <section className="gallery">
 
@@ -417,7 +411,6 @@ function Delhi() {
 
       </section>
 
-      {/* ================= WHY ================= */}
 
       <section className="why">
 

@@ -168,7 +168,6 @@ function Jaipur() {
 
       </section>
 
-      {/* ================= PACKAGES ================= */}
 
       <section className="packages">
 
@@ -231,7 +230,6 @@ function Jaipur() {
 
           </div>
 
-          {/* GOLD */}
           <div className="package popular">
 
             <div className="badge">
@@ -322,10 +320,7 @@ function Jaipur() {
 
               </ul>
 
-              {/* BUTTON */}
-              <button
-
-                onClick={() =>
+              <button onClick={() =>
                   navigate("/enquiry", {
                     state: {
                       location: "Rajasthan",
@@ -345,7 +340,6 @@ function Jaipur() {
 
       </section>
 
-      {/* ================= GALLERY ================= */}
 
       <section className="gallery">
 
@@ -368,7 +362,6 @@ function Jaipur() {
 
       </section>
 
-      {/* ================= WHY ================= */}
 
       <section className="why">
 

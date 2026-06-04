@@ -233,6 +233,35 @@ select option {
   font-size: 13px;
 }
 
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.service-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: rgba(255, 120, 120, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 14px;
+  color:white;
+}
+
+.service-item button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  color: #666;
+}
+
 button {
   margin-top: 12px;
 

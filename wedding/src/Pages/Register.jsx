@@ -47,8 +47,7 @@ function Register() {
 
       <form
         onSubmit={handleSubmit}
-        className="register-form"
-      >
+       className="register-form" >
 
         <h2>Register</h2>
 
@@ -56,22 +55,19 @@ function Register() {
           type="text"
           name="name"
           placeholder="Enter Name"
-          onChange={handleChange}
-        />
+        onChange={handleChange}/>
 
         <input
           type="email"
           name="email"
           placeholder="Enter Email"
-          onChange={handleChange}
-        />
+          onChange={handleChange} />
 
         <input
           type="password"
           name="password"
           placeholder="Enter Password"
-          onChange={handleChange}
-        />
+          onChange={handleChange}/>
 
         <button type="submit">
           Register

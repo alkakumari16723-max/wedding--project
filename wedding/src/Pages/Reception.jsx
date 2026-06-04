@@ -125,9 +125,7 @@ function Reception() {
         </div>
       </section>
 
-     
-  
-      <section className="cta">
+  <section className="cta">
         <h2>Let’s Plan Your Reception </h2>
         <p>
           Make your celebration night unforgettable with style,

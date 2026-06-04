@@ -75,11 +75,11 @@
 
 .about-img img {
   width: 100%;
-  max-width: 350px; /* ✅ fixed */
+  max-width: 350px; 
   border-radius: 15px;
 }
 
-/* SECTION */
+
 .about-section {
   text-align: center;
   padding: 50px 20px;
@@ -109,7 +109,7 @@
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* STORY */
+
 .about-story {
   padding: 60px 20px;
   background: #fff0f5;
@@ -215,9 +215,8 @@
   cursor: pointer;
 }
 
-/* ================= RESPONSIVE ================= */
 
-/* Tablet */
+
 @media (max-width: 992px) {
   .about-grid {
     grid-template-columns: repeat(2, 1fr);

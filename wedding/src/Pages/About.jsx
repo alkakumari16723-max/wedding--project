@@ -9,7 +9,6 @@ function About() {
   return (
     <div className="about-page">
 
-      {/* HERO SECTION */}
       <div className="about-hero">
 
   <img src={aboutImg2} alt="about" className="hero-img" />

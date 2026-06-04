@@ -4,13 +4,11 @@ import { useNavigate } from "react-router-dom";
 
 import upHero from "../assets/upHero.jpg";
 
-// ================= VENUES =================
 
 import u1 from "../assets/u1.avif";
 import u2 from "../assets/u2.avif";
 import u3 from "../assets/u3.avif";
 
-// ================= GALLERY =================
 
 import ug1 from "../assets/ug1.avif";
 import ug2 from "../assets/ug2.jpg";
@@ -34,8 +32,6 @@ function Uttarpradesh() {
   return (
 
     <div className="goa-page">
-
-      {/* ================= HERO ================= */}
 
       <div
         className="hero"
@@ -74,8 +70,6 @@ function Uttarpradesh() {
         </div>
 
       </div>
-
-      {/* ================= VENUES ================= */}
 
       <section className="venues">
 
@@ -163,7 +157,6 @@ function Uttarpradesh() {
 
           </div>
 
-          {/* CARD 3 */}
 
           <div className="card">
 
@@ -206,8 +199,6 @@ function Uttarpradesh() {
 
       </section>
 
-      {/* ================= PACKAGES ================= */}
-
       <section className="packages">
 
         <h2>
@@ -216,7 +207,6 @@ function Uttarpradesh() {
 
         <div className="package-cards">
 
-          {/* ================= SILVER ================= */}
 
           <div className="package">
 
@@ -273,8 +263,6 @@ function Uttarpradesh() {
             </div>
 
           </div>
-
-          {/* ================= GOLD ================= */}
 
           <div className="package popular">
 
@@ -336,8 +324,6 @@ function Uttarpradesh() {
 
           </div>
 
-          {/* ================= LUXURY ================= */}
-
           <div className="package">
 
             <img
@@ -398,8 +384,6 @@ function Uttarpradesh() {
 
       </section>
 
-      {/* ================= GALLERY ================= */}
-
       <section className="gallery">
 
         <h2>
@@ -420,8 +404,6 @@ function Uttarpradesh() {
         </div>
 
       </section>
-
-      {/* ================= WHY ================= */}
 
       <section className="why">
 

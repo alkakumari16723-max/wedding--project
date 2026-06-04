@@ -25,6 +25,7 @@ function BookingForm() {
   });
 
   const [errors, setErrors] = useState({});
+  const [selectedService, setSelectedService] = useState("");
 
   // ================= HANDLE INPUT =================
   const handleChange = (e) => {
@@ -52,6 +53,7 @@ function BookingForm() {
       }));
     }
   };
+  
 
   // ================= CHECKBOX =================
   const handleCheckbox = (e) => {
@@ -66,6 +68,7 @@ function BookingForm() {
       functions: updated
     }));
   };
+  
 
   // ================= VENUES =================
   useEffect(() => {
@@ -93,6 +96,8 @@ function BookingForm() {
     if (!formData.location) err.location = "Select location";
     if (!formData.venue) err.venue = "Select venue";
     if (!formData.packageType) err.packageType = "Select package";
+    if (formData.services.length === 0)
+  err.services = "Select at least one service";
 
     return err;
   };
@@ -211,6 +216,62 @@ function BookingForm() {
           </div>
 
           <input name="budget" placeholder="Budget" value={formData.budget} onChange={handleChange} />
+          <select
+  value={selectedService}
+  onChange={(e) => {
+    const service = e.target.value;
+
+    if (
+      service &&
+      !formData.services.includes(service)
+    ) {
+      setFormData((prev) => ({
+        ...prev,
+        services: [...prev.services, service]
+      }));
+    }
+
+    setSelectedService("");
+  }}
+>
+  <option value="">Select Service</option>
+  <option value="Photography">Photography</option>
+  <option value="Videography">Videography</option>
+  <option value="Decoration">Decoration</option>
+  <option value="Catering">Catering</option>
+  <option value="DJ & Music">DJ & Music</option>
+  <option value="Makeup Artist">Makeup Artist</option>
+  <option value="Bridal Entry">Bridal Entry</option>
+  <option value="Wedding Planner">Wedding Planner</option>
+</select>
+
+{errors.services && (
+  <p className="error">{errors.services}</p>
+)}
+
+{formData.services.length > 0 && (
+  <div className="service-list">
+    {formData.services.map((service, index) => (
+      <div key={index} className="service-item">
+        <span>{service}</span>
+
+        <button
+          type="button"
+          onClick={() =>
+            setFormData((prev) => ({
+              ...prev,
+              services: prev.services.filter(
+                (_, i) => i !== index
+              )
+            }))
+          }
+        >
+          ✕
+        </button>
+      </div>
+    ))}
+  </div>
+)}
 
           <select name="packageType" value={formData.packageType} onChange={handleChange}>
             <option value="">Select Package</option>
